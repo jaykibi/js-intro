@@ -155,10 +155,26 @@
 // var difference = subtract(12, 4);
 // console.log(difference);
 
-var sum = add(6,7);
-console.log(sum);
+// var sum = add(8,7);
+// console.log(sum);
 
-function add(num1,num2) {
-	var sum = num1 + num2;
-	return sum;
-}
+// function add(num1,num2) {
+// 	var sum = num1 + num2;
+// 	return sum;
+// }
+
+// var multiply = function(num1, num2) {
+//   var product = num1 * num2;
+//   return product;
+// };
+
+// var answer = multiply(3, 4);
+// console.log(answer);
+
+var product = multiply(3, 4);
+console.log(product);
+
+var multiply = function(num1, num2) {
+  var product = num1 * num2;
+  return product; 
+};
