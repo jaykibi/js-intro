@@ -124,14 +124,41 @@
 
 // forEach //
 
-var strangeKids = ['Will', 'Mike', 'Lucas', 'Dustin', 'Max', 'Eleven'];
+// var strangeKids = ['Will', 'Mike', 'Lucas', 'Dustin', 'Max', 'Eleven'];
 
-strangeKids.forEach(function(kid, index) {
-  console.log(`${index +1}. ${kid}`);
-});
+// strangeKids.forEach(function(kid, index) {
+//   console.log(`${index +1}. ${kid}`);
+// });
 
-var favMovies = ['looper','transformer','avenger','limitless']
+// var favMovies = ['looper','transformer','avenger','limitless']
 
-favMovies.forEach(function(movie, index) {
-  console.log(movie + `${index}`);
-});
+// favMovies.forEach(function(movie, index) {
+//   console.log(movie + `${index}`);
+// });
+
+// function sayHello(name) {
+// 	console.log(`Hello ${name}!`);
+// }
+
+// function fullName(first, last) {
+// 	return `${first} ${last}!`;
+// }
+
+// var name = fullName('John', 'Smith');
+// sayHello(name);
+
+// function subtract(num1, num2) {
+// 	var difference = num1 - num2;
+// 	return difference;
+// }
+
+// var difference = subtract(12, 4);
+// console.log(difference);
+
+var sum = add(6,7);
+console.log(sum);
+
+function add(num1,num2) {
+	var sum = num1 + num2;
+	return sum;
+}
