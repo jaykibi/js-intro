@@ -96,10 +96,42 @@
 // 	console.log('num is somewhere between 8 & 10');
 // }
 
-var num = 1; 
+// var num = 4; 
 
-// BOTH conditions must be true 
+// // BOTH conditions must be true 
 
-if (num > 3 && num < 10) {
-	console.log('the number is larger than 3 and smaller than 10');
-}
+// if (num > 3 && num < 10) {
+// 	console.log('the number is larger than 3 and smaller than 10');
+// }
+
+//////////////// ITERATION //////////////////////////
+
+
+// for loop // 
+
+// for (var i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+
+// while loop //
+
+// var counter = 1;
+
+// while (counter <= 10) {
+//   console.log(counter);
+//   counter+=2;
+// }
+
+// forEach //
+
+var strangeKids = ['Will', 'Mike', 'Lucas', 'Dustin', 'Max', 'Eleven'];
+
+strangeKids.forEach(function(kid, index) {
+  console.log(`${index +1}. ${kid}`);
+});
+
+var favMovies = ['looper','transformer','avenger','limitless']
+
+favMovies.forEach(function(movie, index) {
+  console.log(movie + `${index}`);
+});
