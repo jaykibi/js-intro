@@ -171,10 +171,11 @@
 // var answer = multiply(3, 4);
 // console.log(answer);
 
-var product = multiply(3, 4);
-console.log(product);
+// var product = multiply(3, 4);
+// console.log(product);
 
-var multiply = function(num1, num2) {
-  var product = num1 * num2;
-  return product; 
-};
+// var multiply = function(num1, num2) {
+//   var product = num1 * num2;
+//   return product; 
+// };
+
