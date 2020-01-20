@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>js kibi</title>
-	</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+	<p>0</p>
+	<div class="plus">
+		<button>+</button>
+	</div>
+	<div class="minus">
+		<button>-</button>
+	</div>
+	
+    <script>
+	  var $button = document.querySelector('.plus');
+	  var $button2 = document.querySelector('.minus');
+	  var $counter = document.querySelector('p');
+	  var count = 0;
+	  var initialFontSize = 16; 
 
-	<body>
-		<script src="app.js" type="text/javascript"></script>
-	</body>
+	  console.log('$button:', $button);
+	  console.log('$counter:', $counter);
+	  console.log('$button2:', $button2);
+
+	  function handleButtonClick() {
+		  count++; 
+		  $counter.textContent = count; 
+		  $counter.style.fontSize = initialFontSize + count + 'px';
+	  }
+
+	  function subtraction() {
+		  count--;
+		  $counter.textContent = count;
+		  $counter.style.fontSize = initialFontSize + count + 'px';
+	  }
+
+	  $button.addEventListener('click', handleButtonClick)
+	  $button2.addEventListener('click', subtraction)
+    </script>
+  </body>
 </html>
